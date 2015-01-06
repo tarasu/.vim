@@ -14,7 +14,6 @@ set nowritebackup
 set noswapfile
 syntax enable
 set autoread
-set re=1
 set lazyredraw
 
 "  UI
@@ -253,7 +252,7 @@ let g:loaded_maximize=1
 " NERDTree
 let NERDTreeShowBookmarks = 0
 let NERDChristmasTree = 1
-let NERDTreeWinPos = "right"
+let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeWinSize = 60 
