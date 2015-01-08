@@ -29,7 +29,7 @@ Bundle "git://github.com/scrooloose/nerdcommenter"
 Bundle "git://github.com/sjl/gundo.vim.git"
 Bundle "git://github.com/godlygeek/tabular.git"
 Bundle "git://github.com/kien/ctrlp.vim"
-"Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://git.wincent.com/command-t.git'
 Bundle "git://github.com/jpo/vim-railscasts-theme"
 Bundle "git://github.com/morhetz/gruvbox.git"
 Bundle "git://github.com/fmoralesc/vim-vitamins.git"
