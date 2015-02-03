@@ -150,7 +150,7 @@ nnoremap <leader>rf :call RunCurrentSpecFile()<CR>
 nnoremap <leader>a :Ack 
 
 " Ack settings: https://github.com/krisleech/vimfiles/wiki/Make-ack-ignore-files
-let g:ackprg="ack -H --nocolor --nogroup --column"
+let g:ackprg="ack -H --nocolor --nogroup --column --ignore-dir=log --ignore-dir=coverage --ignore-dir=vendor --ignore-dir=tmp"
 
 " Auto format
 map === mmgg=G`m^zz
@@ -233,10 +233,13 @@ map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
 map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
 map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
+map <leader>gs :CommandTFlush<cr>\|:CommandT app/services<cr>
+map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
+map <leader>gw :CommandTFlush<cr>\|:CommandT app/workers<cr>
+map <leader>gu :CommandTFlush<cr>\|:CommandT app/uploaders<cr>
+map <leader>gd :CommandTFlush<cr>\|:CommandT app/decorators<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT public/stylesheets<cr>
-map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
 
 let g:ctrlp_map = '<Leader>f'
 let g:ctrlp_cmd = 'CtrlPMixed'
