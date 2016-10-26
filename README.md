@@ -1,17 +1,36 @@
-# Ruby/Rails centric vimfiles and installer
-
-VIM Bundle for Ruby On Rails developers
+# VIM Bundle for Ruby On Rails
 
 ## Requirements
 
 Vim 7.3 or better
 
+## Install
 
-## Quick Install
+    cd ~/
+    bash <(curl -s https://raw.githubusercontent.com/tarasu/vimfiles/master/installer.sh)
 
-    curl https://raw.github.com/tarasu/vimfiles/master/installer.sh -o - | sh
+#### Install Dependacies
 
-## Basic Mappings
+*MacOS*
+
+    brew install ack
+    brew install ctags
+
+Note: MacOS comes with the BSD version of ctags which is not compatible.
+
+*Ubuntu*
+
+    sudo apt-get install exuberant-ctags
+    sudo apt-get install ack-grep
+    sudo ln -s /usr/bin/ack-grep /usr/local/bin/ack
+
+## Update
+
+    cd ~/.vim
+    rake update
+
+# TODO: Basic Mappings
+
 
 The leader is mapped to `,`
 
@@ -73,7 +92,7 @@ See `.vimrc` for more.
 
 ## Plugins
 
-### rails            
+### rails
 
 *Lots* of stuff - get to know this plugin!
 
@@ -107,7 +126,7 @@ Provides text-objects for Ruby blocks
 
 http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
 
-### fugitive         
+### fugitive
 
 Git integration
 
@@ -119,7 +138,7 @@ http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
 
 `:help fugitive`
 
-### command-t (`,f`)            
+### command-t (`,f`)
 
 Find files in your project with minimal keypresses
 
@@ -135,7 +154,7 @@ For example `conadus` would find `controllers/admin/users`
 
 `Ctrl + c` - cancel
 
-### snipmate (`TAB`)         
+### snipmate (`TAB`)
 
 Snippets, press `TAB` to expand
 
@@ -151,7 +170,7 @@ Examples (in a Ruby file):
 
 ### gundo (`F5`)
 
-Navigate changes history tree 
+Navigate changes history tree
 
 http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
 
@@ -161,7 +180,7 @@ Align stuff
 
 http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
-### nerdcommenter (`,space`)
+### tcomment (`//`)
 
 Comment/Uncomment stuff out
 
@@ -179,20 +198,13 @@ Search project for text (aka find in files)
 
 `,a "some words"`
 
-### nerdtree (`,p`)             
+### NerdTree (`<space>n`)
 
 Project file browser
 
-`,p` opens file browser
+`<space>n` opens file browser
 
-`o` / `x` open and close files/folders
-
-`m` menu to move/delete/copy files/folders
-
-`?` Help
-
-I use nerdtree for creating or moving files, but find command-t quicker for
-opening files.
+`<space>m` NerdTree menu
 
 ### surround (`ys`/`cs`/`ds`)
 
@@ -242,52 +254,3 @@ reported.
 ### vundle
 
 Plugin manager and part of the reason why my vimfiles as so compact
-
-## INSTALLATION
-
-### Install these vimfiles
-
-Note: You will already have a `~/.vim` folder, either delete or move it.
-
-    mv ~/.vim ~/.vim.old
-    git clone https://github.com/tarasu/vimfiles ~/.vim
-    cd ~/.vim
-    rake install
-
-or run:
-
-    curl https://raw.github.com/tarasu/vimfiles/master/bootstrap.sh -o - | sh
-
-#### To update to the latest vimfiles
-
-    cd ~/.vim
-    rake update
-
-#### Install Dependacies
-
-*MacOS*
-
-    brew install ack
-    brew install ctags
-
-Note: MacOS comes with the BSD version of ctags which is not compatible.
-
-*Ubuntu*
-
-    sudo apt-get install exuberant-ctags
-    sudo apt-get install ack-grep
-    sudo ln -s /usr/bin/ack-grep /usr/local/bin/ack
-
-## Acknowledgments
-
-- Tim Pope (of course) http://tpo.pe/
-- https://github.com/carlhuda/janus
-- https://github.com/rson/vimfiles/blob/master/plugins.vim
-- https://github.com/codegram/vimfiles
-- https://www.destroyallsoftware.com/file-navigation-in-vim.html
-- https://github.com/alexreisner/dotfiles/blob/master/.vimrc
-- http://items.sjbach.com/319/configuring-vim-right
-- https://github.com/sickill/dotfiles/blob/master/.vimrc
-- #vim on freenode
- - woldrich
- - spiiph
