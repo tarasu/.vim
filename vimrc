@@ -112,3 +112,5 @@ let g:syntastic_check_on_wq = 0
 
 " status bar
 set laststatus=2
+
+set noswapfile
