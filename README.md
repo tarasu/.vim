@@ -29,4 +29,9 @@ Note: MacOS comes with the BSD version of ctags which is not compatible.
     cd ~/.vim
     rake update
 
-# TODO: Basic Mappings
+
+# Basic Mappings
+
+```
+RUBOCOP: <Leader>r
+```

@@ -21,6 +21,7 @@ Plugin 'git://github.com/tpope/vim-rake.git'
 Plugin 'git://github.com/tpope/vim-rails.git'
 Plugin 'git://github.com/thoughtbot/vim-rspec.git'
 Plugin 'git://github.com/scrooloose/syntastic.git'
+Plugin 'git://github.com/ngmy/vim-rubocop'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -114,3 +115,6 @@ let g:syntastic_check_on_wq = 0
 set laststatus=2
 
 set noswapfile
+
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
