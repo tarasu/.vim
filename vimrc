@@ -22,6 +22,8 @@ Plugin 'git://github.com/tpope/vim-rails.git'
 Plugin 'git://github.com/thoughtbot/vim-rspec.git'
 Plugin 'git://github.com/scrooloose/syntastic.git'
 Plugin 'git://github.com/ngmy/vim-rubocop'
+Plugin 'git://github.com/slim-template/vim-slim'
+Plugin 'git://github.com/kchmck/vim-coffee-script'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -77,6 +79,7 @@ map <leader>gd :CommandTFlush<cr>\|:CommandT app/decorators<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
 map <leader>gt :CommandTFlush<cr>\|:CommandT test<cr>
+map <leader>gs :CommandTFlush<cr>\|:CommandT spec<cr>
 noremap <Leader>r :CommandTFlush<CR>
 
 
