@@ -71,15 +71,14 @@ map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
 map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
 map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT app/serializers<cr>
 map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
 map <leader>gw :CommandTFlush<cr>\|:CommandT app/workers<cr>
 map <leader>gu :CommandTFlush<cr>\|:CommandT app/uploaders<cr>
 map <leader>gd :CommandTFlush<cr>\|:CommandT app/decorators<cr>
+map <leader>gs :CommandTFlush<cr>\|:CommandT app/services<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
-map <leader>gt :CommandTFlush<cr>\|:CommandT test<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT spec<cr>
+map <leader>gt :CommandTFlush<cr>\|:CommandT spec<cr>
 noremap <Leader>r :CommandTFlush<CR>
 
 
@@ -113,11 +112,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" let g:syntastic_haml_checkers = ['haml_lint'] " need install gem haml-lint
 
 " status bar
 set laststatus=2
 
 set noswapfile
 
-let g:vimrubocop_keymap = 0
+ let g:vimrubocop_keymap = 0 " need install gem rubocop
 nmap <Leader>r :RuboCop<CR>
