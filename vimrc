@@ -24,6 +24,7 @@ Plugin 'git://github.com/scrooloose/syntastic.git'
 Plugin 'git://github.com/ngmy/vim-rubocop'
 Plugin 'git://github.com/slim-template/vim-slim'
 Plugin 'git://github.com/kchmck/vim-coffee-script'
+Plugin 'git://github.com/nathanaelkane/vim-indent-guides.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -79,6 +80,7 @@ map <leader>gs :CommandTFlush<cr>\|:CommandT app/services<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
 map <leader>gt :CommandTFlush<cr>\|:CommandT spec<cr>
+map <leader>ga :CommandTFlush<cr>\|:CommandT config<cr>
 noremap <Leader>r :CommandTFlush<CR>
 
 
@@ -121,3 +123,8 @@ set noswapfile
 
  let g:vimrubocop_keymap = 0 " need install gem rubocop
 nmap <Leader>r :RuboCop<CR>
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
