@@ -77,6 +77,7 @@ map <leader>gw :CommandTFlush<cr>\|:CommandT app/workers<cr>
 map <leader>gu :CommandTFlush<cr>\|:CommandT app/uploaders<cr>
 map <leader>gd :CommandTFlush<cr>\|:CommandT app/decorators<cr>
 map <leader>gs :CommandTFlush<cr>\|:CommandT app/services<cr>
+map <leader>gr :CommandTFlush<cr>\|:CommandT app/resources<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
 map <leader>gt :CommandTFlush<cr>\|:CommandT spec<cr>
