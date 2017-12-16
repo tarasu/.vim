@@ -13,6 +13,7 @@ Vim 7.3 or better
 
 *MacOS*
 
+    brew install fzf
     brew install ack
     brew install ctags
 
