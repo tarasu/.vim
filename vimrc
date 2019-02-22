@@ -10,6 +10,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -29,12 +30,16 @@ filetype plugin indent on    " required
 
 set rtp+=/usr/local/opt/fzf
 
-" VIM setting
 
+
+" VIM setting
 filetype on
 syntax on
+let g:solarized_termcolors=16
+set t_Co=256
+set background=dark
+colorscheme gruvbox
 set regexpengine=1
-colorscheme Tomorrow-Night
 set guifont=Menlo\ Regular:h18
 set lines=48 columns=179
 set colorcolumn=120
@@ -133,3 +138,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
 " ALE color
 highlight ALEWarning ctermbg=234
+
+let $LANG = 'en_US'
