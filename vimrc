@@ -140,3 +140,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 highlight ALEWarning ctermbg=234
 
 let $LANG = 'en_US'
+
+let g:NERDTreeNodeDelimiter = "\u00a0"

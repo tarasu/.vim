@@ -11,4 +11,5 @@ cd ~/.vim
 
 rake install
 ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/ackrc ~/.ackrc
 cd ~/
