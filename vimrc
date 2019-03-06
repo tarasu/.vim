@@ -24,6 +24,7 @@ Plugin 'w0rp/ale'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'nathanaelkane/vim-indent-guides.git'
+Plugin 'chiel92/vim-autoformat'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,11 +85,14 @@ map <leader>gw :Files app/workers<cr>
 map <leader>gu :Files app/uploaders<cr>
 map <leader>gd :Files app/decorators<cr>
 map <leader>gs :Files app/services<cr>
+map <leader>go :Files app/operations<cr>
 map <leader>gr :Files app/resources<cr>
 map <leader>gl :Files lib<cr>
 map <leader>gp :Files public<cr>
 map <leader>gt :Files spec<cr>
 map <leader>gq :Files config<cr>
+
+map <leader>fm :Autoformat<cr>
 
 
 " TComment
