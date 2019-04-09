@@ -135,6 +135,10 @@ set noswapfile
  let g:vimrubocop_keymap = 0 " need install gem rubocop
 nmap <Leader>r :RuboCop<CR>
 
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>q :call RunAllSpecs()<CR>
+
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=235
@@ -146,3 +150,7 @@ highlight ALEWarning ctermbg=234
 let $LANG = 'en_US'
 
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+set clipboard=unnamedplus
+
+" :w !pbcopy
