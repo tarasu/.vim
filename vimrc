@@ -150,7 +150,3 @@ highlight ALEWarning ctermbg=234
 let $LANG = 'en_US'
 
 let g:NERDTreeNodeDelimiter = "\u00a0"
-
-set clipboard=unnamedplus
-
-" :w !pbcopy
