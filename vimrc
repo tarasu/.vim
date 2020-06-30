@@ -20,7 +20,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rake.git'
 Plugin 'tpope/vim-rails.git'
 Plugin 'thoughtbot/vim-rspec.git'
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/ale'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'nathanaelkane/vim-indent-guides.git'
@@ -144,8 +144,9 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
-" ALE color
+" ALE config
 highlight ALEWarning ctermbg=234
+let b:ale_linters = {'ruby': ['rubocop', 'reek', 'sorbet']}
 
 let $LANG = 'en_US'
 
