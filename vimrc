@@ -132,7 +132,7 @@ set laststatus=2
 
 set noswapfile
 
- let g:vimrubocop_keymap = 0 " need install gem rubocop
+let g:vimrubocop_keymap = 0 " need install gem rubocop
 nmap <Leader>r :RuboCop<CR>
 
 " RSpec.vim mappings
@@ -151,3 +151,6 @@ let b:ale_linters = {'ruby': ['rubocop', 'reek', 'sorbet']}
 let $LANG = 'en_US'
 
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" vim-autoformat config
+" let g:autoformat_verbosemode=1 " show log
